@@ -1,0 +1,70 @@
+body{font-family: 'Roboto', sans-serif;}
+
+
+/*TIPOGRAFIAS*/
+h1,h2,h3,h4,h5,h6,p{font-family: 'Roboto', sans-serif;}
+
+h1{
+    font-size: 2.5rem;
+     font-weight: 300;
+}
+h2{
+    font-size: 2rem;
+     font-weight: 300;
+}
+h3{
+    font-size: 1.75rem;
+     font-weight: 300;
+}
+h4{
+    font-size: 1.5rem;
+     font-weight: 400;
+}
+h5{
+    font-size: 1.5rem;
+     font-weight: 300;
+}
+
+p{font-weight: 300;}
+/*FIN TIOGRAFIAS*/
+
+
+/*FONDOS*/
+.fondo{
+            background: url('../img/iron.jpg');
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+         }
+.fondo-2{
+    background-color: rgba(0,0,0,.5);
+    height: 100vh;
+}
+
+.bg-fondo-claro{
+  background-color: #fefeac;  
+  }
+.bg-danger{
+    background-color: #f38181 !important;
+}
+/*FIIN   FONDOS*/
+
+
+.btn{ /*sobreescribimos la clase x defecto de 1 rem*/
+    font-size: 1.25rem; 
+    font-weight: 300;
+}
+/*margenes y padding*/
+.pb-25{
+    padding-bottom: 2.5rem;
+}
+
+/*iconos*/
+.iconos{
+    font-size: 2.25rem;
+}
+
+/*otros*/
+.form-control{
+border: 1px solid rgba(0,0,0,1);
+    }

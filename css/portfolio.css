@@ -1,0 +1,127 @@
+ @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,400,500');
+/*Colors  
+          
+    $black:#353535;
+    $gray: #4f4f4f;
+        $medium-gray #737373;
+        $light-gray: #c4c4c4;
+        $orange: #f96855;
+        
+        /**/
+  
+        
+        /*General styles*/
+        * {box-sizing: border-box;}
+        
+/*Fuentes*/
+.card, .fuente-text{
+    font-family: 'Roboto', sans-serif;
+}
+.card h4, .cont-grid h1, .fuente-text h2{
+    font-family: 'FatFace', sans-serif;
+}
+        .cont-grid
+        {
+            background: #353535;
+        color: gray;
+            font-family:   sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.45;
+            display: flex; flex-wrap: wrap;
+        }
+        
+        
+        .main-content{
+            padding: 10%;
+            flex: 1 1 100%;
+            min-height: 200vh;
+        }
+        
+        /*porfolio*/
+        .portfolio{
+            display: grid;
+            height: 100%;
+            
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+                grid-gap: 20px;
+        }
+        .portfolio-item{
+            background: #f96855;
+            color: #4f4f4f;
+            font-weight: #737373;
+             display: flex;
+            justify-content: center;align-items: center;
+            
+        }
+.medium{
+    grid-row: span 2;
+}
+@media (max-width: 780px){
+     .portfolio{
+            display: grid;
+            height: 100%;
+            
+            grid-template-rows: minmax(150px, 1fr);
+            grid-template-columns: repeat(1, 1fr);
+                grid-gap: 20px;
+         
+         
+            grid-auto-rows: minmax(200px, 1fr);
+            grid-auto-columns: minmax(150px, 1fr);
+            grid-auto-flow:  dense;
+        }
+}
+
+ .two{
+            background-image: url(../img/ba1.jpg);
+}
+.one{
+            background-image: url(../img/buenosaires/b5.jpg);
+}
+.six{
+            background-image: url(../img/buenosaires/ba3.jpg);
+}
+.four{
+            background-image: url(../img/santelmo/santelmo1.jpg);
+}
+.three{
+            background-image: url(../img/palermo/5.jpg);
+}
+.five{
+            background-image: url(../img/palermo/3.jpg);
+}
+
+        .two, .three, .four, .one, .five, .six{
+            
+          background-blend-mode: multiply; /*junto con el back-color*/
+            background-color: #353535;;
+            
+            color:#c4c4c4;
+            background-size: cover;
+            background-position: top left;
+                
+            transition: all ease-in-out 300ms;
+            position: relative;
+ }
+        
+        .two:hover, .six:hover, .one:hover, .four:hover, .five:hover, .three:hover{
+        background-blend-mode: initial;
+            background-position: center;
+             }
+        .two::before{
+            content: '';
+            display: block;
+          background: :#353535;
+            opacity: 0.8;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            
+           
+         }
+ 
+    
