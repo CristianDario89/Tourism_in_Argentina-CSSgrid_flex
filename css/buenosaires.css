@@ -147,8 +147,8 @@
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
        
                      grid-template-rows: 305px 305px;
-
-       
+ 
+     grid-auto-rows: 305px;  
             grid-gap: 5px;
         }
       .main2  img{
