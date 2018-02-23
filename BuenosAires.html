@@ -27,14 +27,31 @@
         }
         
         @media (max-width: 767px){
- .celu1  {display: none;}   
+ .celu1 {display: none;}  
+            
             .large, .three, .tall{grid-column-end: span 2;
           height: 100%;
-            width:250px;
- text-align: justify;
-                margin: auto;
-}
-         
+                padding: 5px; }
+            
+          .two{
+               order:  -1;
+            }
+            .wide{order: 1}
+            .sombra{
+                box-shadow: 4px 4px 10px, -4px -4px 10px;
+                padding: 4px;
+                margin-top: 100px;
+             }
+            .sombra h1 {
+                padding: 5px;
+                
+             }  
+            .portfolio{
+              grid-gap: 1px;
+         }
+            
+        }
+           
       </style>
   </head>
   <body>
@@ -180,21 +197,21 @@
                 </section>
             </div>
             
-            <div class="portfolio-item2 large two "> <h1 class="text-center">Having a good time</h1>
+            <div class="portfolio-item2 large two "><div class="sombra"> <h1 class="text-center">Having a good time</h1>
         
             <p>Visitar y recorrer la Ciudad de Buenos Aires es una experiencia única. La capital argentina tiene una mezcla de arquitectura europea, tránsito congestionado, atrapantes olores a comida local y un sinnúmero de sensaciones que no dejan a ningún turista indiferente.</p>
             <p>Para visitar la ciudad, conviene empezar por saber en qué época del año es mejor hacerlo. Seguramente otoño, invierno y primavera sean las mejores estaciones para conocer Buenos Aires ya que en verano las trepidantes temperaturas, el calor del asfalto y los edificios que concentran el smog hacen que sea conveniente estar durante el día en un lugar cerrado y con aire acondicionado.</p>
             <p>Con respecto al hospedaje existen cientos de lugares para hacerlo, y conviene reservar lo antes posible.
               </p>
               <p>Con respecto al turismo, es conveniente que el visitante sepa que <a href="https://www.bsas4u.com/es/top-10-places-to-visit-in-buenos-aires">lugares son de interés,</a>  si quiere hacer un pase de compras, cultural, turístico o de ocio Buenos Aires tiene todas las opciones.  </p>
-              <p>Con respecto al turismo, es conveniente que el visitante sepa que lugares son de interés, si quiere hacer un pase de compras, cultural, turístico o de ocio Buenos Aires tiene todas las opciones.</p>
+              <p>Con respecto al turismo, es conveniente que el visitante sepa que lugares son de interés, si quiere hacer un pase de compras, cultural, turístico o de ocio Buenos Aires tiene todas las opciones.</p></div>
             </div>
             
-            <div class="portfolio-item2 three"> <h1 class=" text-center">Gastronomía Buenos Aires
+            <div class="portfolio-item2 three"> <div class="sombra"><h1 class=" text-center">Gastronomía Buenos Aires
 </h1>
    <p>
               En Buenos Aires se puede degustar lo mejor de la gastronomía argentina e internacional. Los platos típicos argentinos son: milanesa con puré, asado,  milanesa a la napolitana, costillas de cerdo a la riojana, empanadas criollas (de carne picada) Tarta Pascualina (tarta de acelga y huevo) pastas italianas como tallarines, mostacholes, agnolottis, ñoquis, sorrentinos y ravioles. La variedad de comidas locales es muy amplia.  </p>
-              <p>Unos de los lugares más tradicionales para comer son las pizzerías donde cada maestro pizzero se esmera por amasar la mejor pizza. Se puede comprar por porción o entera de mozzarella, fugazzeta,  napolitana, de anchoas o calabresa. </p>
+              <p>Unos de los lugares más tradicionales para comer son las pizzerías donde cada maestro pizzero se esmera por amasar la mejor pizza. Se puede comprar por porción o entera de mozzarella, fugazzeta,  napolitana, de anchoas o calabresa. </p> </div>
             </div>
             
             <div class="portfolio-item medium"> 
@@ -216,10 +233,11 @@
                
                  </div></div>
                  
-            <div class="portfolio-item2 tall six"> <h1 class="text-center">Shopping</h1>
+            <div class="portfolio-item2 tall six"><div class="sombra"> <h1 class="text-center">Shopping</h1>
+             
               <h2>Lorem ipsum dolor sit.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laboriosam blanditiis adipisci, accusantium odio optio consectetur a quas maxime, officiis in beatae velit vero. At repellat corrupti velit, tenetur iure.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maiores iste ipsa harum accusantium repellat, culpa velit, debitis porro quod.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maiores iste ipsa harum accusantium repellat, culpa velit, debitis porro quod.</p></div>
             </div>
         </div></div>
     </div>
