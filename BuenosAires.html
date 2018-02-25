@@ -15,6 +15,7 @@
        /* p{
             font-size: 1.5rem;
         }*/
+        .celu2{display: none;}
          .slider{
             background: url(img/fondoInformatica.jpg);
             height: 100vh; /*q abarque el cirn x cien del disp q este trabajamdo*/
@@ -27,6 +28,7 @@
         }
         
         @media (max-width: 767px){
+            .celu2{display: block;}
  .celu1 {display: none;}  
             
             .large, .three, .tall{grid-column-end: span 2;
@@ -204,7 +206,7 @@
             <p>Con respecto al hospedaje existen cientos de lugares para hacerlo, y conviene reservar lo antes posible.
               </p>
               <p>Con respecto al turismo, es conveniente que el visitante sepa que <a href="https://www.bsas4u.com/es/top-10-places-to-visit-in-buenos-aires">lugares son de interés,</a>  si quiere hacer un pase de compras, cultural, turístico o de ocio Buenos Aires tiene todas las opciones.  </p>
-              <p>Con respecto al turismo, es conveniente que el visitante sepa que lugares son de interés, si quiere hacer un pase de compras, cultural, turístico o de ocio Buenos Aires tiene todas las opciones.</p></div>
+              </div>
             </div>
             
             <div class="portfolio-item2 three"> <div class="sombra"><h1 class=" text-center">Gastronomía Buenos Aires
@@ -235,64 +237,53 @@
                  
             <div class="portfolio-item2 tall six"><div class="sombra"> <h1 class="text-center">Shopping</h1>
              
-              <h2>Lorem ipsum dolor sit.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laboriosam blanditiis adipisci, accusantium odio optio consectetur a quas maxime, officiis in beatae velit vero. At repellat corrupti velit, tenetur iure.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maiores iste ipsa harum accusantium repellat, culpa velit, debitis porro quod.</p></div>
+              <h2><a href="http://www.abasto-shopping.com.ar/">ABASTO</a></h2>
+            <p>Si usted es un visitante extranjero y realiza una compra de productos fabricados en Argentina de $70 o más, tiene derecho de pedir que le reembolsen el impuesto al valor agregado.   
+En todas las tiendas adheridas al Tax Free, pida su cheque de reembolso. Al salir del país, muestre sus compras, los recibos de compra y su pasaporte al personal de Aduana y haga sellar sus cheques Global Refund. Cobrará su reembolso en efectivo, en su tarjeta de crédito, en su cuenta bancaria o a través de un cheque en su domicilio. </p>
+           
+            <h2><a href="hhttp://www.unicenter.com.ar/preguntas-frecuentes">UNICENTER</a></h2>
+            <p>Esta ubicados en Paraná 3745, Martínez, Buenos Aires.<br> El shopping abre sus puertas normalmente los días feriados (y en horario extendido el día anterior al feriado). Podés encontrar el listado de locales que conforman el shopping en el apartado "Locales" de nuestro sitio web. Además, podés filtrarlos por categorías.</p> 
+            
+             <h2><a href="http://www.altopalermo.com.ar/#intro1" class="celu2">Alto Palermo</a></h2>
+            <p class="celu2"> El shopping cuenta con un stand de atención al público para realizar consultas, sugerencias y reclamos.<br>
+
+Ubicación: Planta baja - Teléfono: 5777-8000<br>
+
+Horario de atención: de lunes a domingos de 10 a 22 horas </p>
+               
+            </div>
             </div>
         </div></div>
     </div>
-    
-    <!-----------------------------**JUMBOTRON**
-    - class="lead" = hace las letras + delgadas
-    - 1- <div class="d-flex"> pa q el boton aparezca en la part derech d p, como al trabajarcon flexbox se ponen en linea/fila
-      2- align-items-center
-      
-    -  bg-inverse text-white rounded-0(sin borde) ne class principal jumbotron
-    -->
-
-    <div class="jumbotron rounded-0">
-          <div class="container">
-          <h1 class="display-3">Hello, world!</h1>
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <hr class="my-4">
-          <div class="d-flex justify-content-between align-items-center"> 
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-          </p>
-          </div>
-          </div>
-    </div>
-    
-     <!----------------------------FIN JUMBOTRON------------------------->
-     
-     
-     <!-----------------------------**Formularios Formularios**
-  
-     
         
+     <!-----------------------------**Formularios Formularios**
+ 
   <!--------------**form2**
  1  agregar: flex-column flex-md-row -****> debido a la parte responsiva
      2- add:  my-2 -****> debido a la parte responsiva media
      3- pa q desaparezca en md pa abajo: hidden-sm-down (utilidad responsiva)
       --> 
-      <section class="container">  
-             <form action="" class="form-inline  justify-content-center flex-column flex-md-row">
-        <div class="form-group my-2">
-            <label for="" class="mx-2 hidden-sm-down ">Nombre: </label>
-            <input type="text" placeholder="Escribe tu nombre" class="form-control  ">
+      <section class="container-fluid my-1 fondo-form py-2">  
+            <h3 class="text-center ">Leave us your opinion and let us know what would you like this site to appear</h3><hr>
+             <form action="" class="justify-content-center mx-auto flex-column flex-md-row" style="width: 50%;">
+                    <div class="form-group my-2">
+                    <label for="" class="mx-2 hidden-sm-down "><strong>Nombre: </strong></label>
+                    <input type="text" placeholder="Escribe tu nombre" class="form-control  ">
+                   </div>  
 
-        </div>  
+                    <div class="form-group my-2">
+                    <label for="" class="mx-2  hidden-sm-down"><strong>Email:</strong> </label>
+                    <input type="email" placeholder="Escribe tu email" class="form-control  ">
+                    </div>  
+                     
+                     <div class="form-group">
+                        <label for="exampleTextarea"><strong>Message</strong></label>
+                        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                     </div>
 
-            <div class="form-group my-2">
-            <label for="" class="mx-2  hidden-sm-down">Apellido: </label>
-            <input type="text" placeholder="Escribe tu Apellido" class="form-control  ">
-
-        </div>  
-
-             <div class="form-group mx-2 my-2">
-            <button class="btn btn-danger">Enviar</button>
-        </div> 
+                     <div class="form-group mx-2 my-2">
+                    <button class="btn btn-danger">Enviar</button>
+                    </div> 
              </form>
       </section>
      
@@ -347,10 +338,11 @@
              origin: 'right',
                distance: '300px'
          });
-         
-          
- 
-         
+             sr.reveal('form', {
+              duration:2000,
+             origin: 'bottom'
+         });
+           
     </script>
 
        <script>
@@ -370,7 +362,10 @@
       });
     });
     </script>
+     
             
+                 
+      
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

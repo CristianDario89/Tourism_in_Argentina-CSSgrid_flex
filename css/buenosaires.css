@@ -44,7 +44,7 @@
 .medium{
     grid-column: span 2;
 }
-.three, .six{padding-top: 64px;  
+.three, .six{padding-top: 44px;  
 }
 
 
@@ -178,3 +178,17 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+.fondo-form{
+     background-image: url(../img/parallax/2.jpeg);
+    min-height: 100%;
+    color: darkblue;
+    font-weight: 600;
+    letter-spacing: 2px;
+      opacity: 0.70;
+      background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-attachment: fixed;
+}

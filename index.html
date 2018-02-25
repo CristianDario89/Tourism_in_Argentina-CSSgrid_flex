@@ -173,7 +173,7 @@
     <section class="container mt-5 pt-5">
     
     <div class="card-deck">
-  <div class="card text-center mb-2">
+  <div class="card text-center mb-2 an1">
     <img class="card-img-top  " src="img/provincias/La-pesca-en-Bariloche.jpg" height="300px" width="100%" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">¿Cuál es la mejor época del año para viajar a Argentina?</h4>
@@ -181,7 +181,7 @@
      <a class="btn btn-primary margin" href="https://viajala.com.ar/blog/lugares-de-argentina-para-visitar-segun-epoca-del-ano" target="_blank" role="button">Leer más</a>
     </div>
   </div>
-  <div class="card text-center mb-2">
+  <div class="card text-center mb-2 an2">
     <img class="card-img-top  " src="img/santelmo/st4.jpg" height="300px"  width="100%" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">establecimientos hoteleros y gastronómicos</h4>
@@ -189,7 +189,7 @@
      <a class="btn btn-primary" href="http://www.argentinaturismosite.com/" target="_blank" role="button">Leer más</a>
     </div>
   </div>
-  <div class="card text-center mb-2">
+  <div class="card text-center mb-2 an3">
     <img class="card-img-top " src="img/provincias/cataratas.jpg" height="300px" width="100%" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">Los mejores lugares de la Argentina segun los viajeros.</h4>
@@ -203,7 +203,8 @@
     
      <!----------------------------FIN CARDS------------------------->
      <div class="cont-grid mt-2 text-center">
-     <h1 class="m-auto pt-3"><a href="BuenosAires.html" style="text-decoration: none">The most visited in Buenos Aires</a></h1>
+     <h1 class="mx-auto mt-5"><a href="BuenosAires.html" style="text-decoration: none">The most visited in Buenos Aires</a><br><small>Get into for further info</small></h1>
+     
       <div class="main-content">
         <div class="portfolio">
             <div class="portfolio-item medium one">Puerto Madero</div>
@@ -232,7 +233,7 @@
         <p class="text-danger">Have you ever heard about the breathtaking landscapes from the different Argentinian provinces?, or have you ever wondered how cool Buenos must be?.
 
 Do you know about that there are a bunch of places where languages exchange meetings take place in the Buenos Aires capital?</p>
-         <p class="w-25 float-left celu1"><img src="img/provincias/bandera.jpg" alt="" class="img-fluid pr-2" style="height: 350px;"></p>
+         <p class="w-25 float-left celu1"><img src="img/provincias/bandera.jpg" alt="" class="img-fluid pr-2 anim-img" style="height: 350px;"></p>
         <p>Argentina es uno de los países de Latinoamérica con una gran <a href="http://www.1001consejos.com/12-mejores-lugares-turisticos-de-argentina/">diversidad de escenarios y paisajes  </a> que ofrecen una experiencia inolvidable por su riqueza cultural, histórica y gastronómíca, así que si quieres disfrutar de una deliciosa Paella Argentina tu mejor opción es visitar este hermoso país.</p>
         
          <p>Además de ser cuna de los mejores futbolistas a nivel mundial Argentina te ofrece lugares maravillosos y asombrosos, así que aquí tienes la mejor opción para disfrutar de una hermosas ciudades en pleno continente Americano.</p>
@@ -293,23 +294,35 @@ Do you know about that there are a bunch of places where languages exchange meet
          });
          
           
-        sr.reveal('.one, .four, .five', {
-             duration:2000,
+        sr.reveal('.one, .four, .five, .anim-img', {
+             duration:1000,
              origin: 'left',
                distance: '300px',
                viewFactor: 0.2
          });
            sr.reveal('.two, .three, .six', {
-             duration:2000,
+             duration:1000,
              origin: 'right',
                distance: '300px',
                viewFactor: 0.2
          });
           
-          sr.reveal('.card', {
-             duration:2000,
+          sr.reveal('.an3', {
+             duration:1000,
              origin: 'left',
                distance: '400px',
+               viewFactor: 0.2
+         });
+           sr.reveal('.an2', {
+             duration:1400,
+             origin: 'left',
+               distance: '400px',
+               viewFactor: 0.2
+         });
+           sr.reveal('.an1', {
+             duration:1800,
+             origin: 'left',
+               distance: '600px',
                viewFactor: 0.2
          });
          
@@ -332,7 +345,8 @@ Do you know about that there are a bunch of places where languages exchange meet
       });
     });
     </script>
-            
+     
+        
             
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
